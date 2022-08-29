@@ -1,0 +1,14 @@
+package com.exe.springdi4;
+
+public class MyTimeService implements TimeService{
+
+	public String getTimeString() {
+
+		
+		
+		return null;
+	}
+	
+	
+
+}

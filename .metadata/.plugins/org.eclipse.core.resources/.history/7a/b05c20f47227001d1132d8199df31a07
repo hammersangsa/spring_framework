@@ -1,0 +1,11 @@
+package com.exe.aop;
+
+public class MyAfterThrowingAdvice {
+
+	public void afterThrowMethodCall() {
+		
+		System.out.println("메소드 에러 발생 후(after Throw)");
+		
+	}
+	
+}

@@ -1,0 +1,42 @@
+package com.exe.springJdbcTemplate;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.sql.DataSource;
+
+public class CustomDAO {
+
+	private DataSource dataSource;
+	
+	public void setDatasource(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+	
+	Connection conn = null;
+	
+	public int insertData(CustomDTO dto) {
+		
+		int result = 0;
+		
+		PreparedStatement pstmt = null;
+		String sql;
+		
+		try {
+			
+			conn = dataSource.getConnection();
+			
+			sql = "insert into custom (id,name,age) values (?,?,?)";
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, dto.getId());
+			pstmt.setString(1, dto.getName());
+			pstmt.setInt(1, dto.getId());
+			
+			
+			
+		} catch (Exception e) {
+			System.out.println(e.toString());
+		}
+	}
+}

@@ -1,0 +1,8 @@
+package com.exe.springmvc;
+
+public class PersonDTO {
+
+	private String name;
+	private String phone;
+	private String email;
+}

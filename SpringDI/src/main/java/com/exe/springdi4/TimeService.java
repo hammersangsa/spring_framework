@@ -1,0 +1,7 @@
+package com.exe.springdi4;
+
+public interface TimeService {
+
+	public String getTimeString();
+	
+}

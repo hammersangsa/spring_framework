@@ -1,0 +1,8 @@
+package com.exe.aop;
+
+public class TargetA {
+
+	public void doSomething1() {
+		System.out.println("TargetA.doSomething1");
+	}
+}

@@ -1,0 +1,11 @@
+package com.exe.aop;
+
+public class MyAfterThrowingAdvice {
+
+	public void afterThrowingMethodCall() {
+		
+		System.out.println();
+		
+	}
+	
+}

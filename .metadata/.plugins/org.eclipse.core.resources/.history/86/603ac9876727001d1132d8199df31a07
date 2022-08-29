@@ -1,0 +1,9 @@
+package com.exe.aop;
+//특정 조인포인트(포인트컷)에 적용할 코드
+public class MyBeforeAdvice {
+
+	public void beforeMethodCall() {
+		System.out.println("메소드 실행 전");
+	}
+	
+}

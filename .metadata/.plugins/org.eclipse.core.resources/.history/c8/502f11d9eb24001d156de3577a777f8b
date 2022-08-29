@@ -1,0 +1,16 @@
+package com.exe.springdi4;
+
+import java.text.SimpleDateFormat;
+
+public class MyTimeService implements TimeService{
+
+	public String getTimeString() {
+
+		SimpleDateFormat
+		
+		return null;
+	}
+	
+	
+
+}
