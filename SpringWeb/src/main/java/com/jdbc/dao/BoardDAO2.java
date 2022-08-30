@@ -142,69 +142,35 @@ public class BoardDAO2 {
 	Connection conn = null;
 	
 	//조회수 증가
-	public int updateHitCount(int num) {
-		int result = 0;
-		PreparedStatement pstmt = null;
-		String sql;
+	public void updateHitCount(int num) {
 		
-		try {
-			sql = "update board set hitCount = hitCount + 1 where num=?";
-			
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setInt(1, num);
-			
-			result = pstmt.executeUpdate();
-			
-			pstmt.close();
-		} catch (Exception e) {
-			System.out.println(e.toString());
-		}
-		return result;
+		StringBuilder sql = new StringBuilder();
+		
+		sql.append("update board set hitCount = hitCount + 1 where num=?");
+
+		jdbcTemplate.update(sql.toString(),num);
+		
 	}
 	//수정
-	public int updateData(BoardDTO dto) {
-		int result = 0;
-		PreparedStatement pstmt = null;
-		String sql;
-
-		try {
-			sql = "update board set name=?,pwd=?,email=?,subject=?,";
-			sql+= "content=? where num=?";
+	public void updateData(BoardDTO dto) {
 			
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, dto.getName());
-			pstmt.setString(2, dto.getPwd());
-			pstmt.setString(3, dto.getEmail());
-			pstmt.setString(4, dto.getSubject());
-			pstmt.setString(5, dto.getContent());
-			pstmt.setInt(6, dto.getNum());
+		StringBuilder sql = new StringBuilder();
+		
+		sql.append("update board set name=?,pwd=?,email=?,subject=?,")
+		.append("content=? where num=?");
+		
+		jdbcTemplate.update(sql.toString(),
+				dto.getName(),dto.getPwd(),dto.getEmail(),
+				dto.getSubject(),dto.getContent(),dto.getNum());
 			
-			result = pstmt.executeUpdate();
-			
-			pstmt.close();
-		} catch (Exception e) {
-			System.out.println(e.toString());
-		}
-		return result;
 	}
 	//삭제
-	public int deleteData(int num) {
-		int result = 0;
-		PreparedStatement pstmt = null;
-		String sql;
+	public void deleteData(int num) {
 		 
-		try {
-			sql = "delete board where num=?";
+		StringBuilder sql = new StringBuilder(100);
+	
+		sql.append("delete board where num=?");
 			
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setInt(1, num);
-			
-			result = pstmt.executeUpdate();
-			
-			pstmt.close();
-		} catch (Exception e) {
-			System.out.println(e.toString());
-		}
-		return result;
+		jdbcTemplate.update(sql.toString(),num);
 	}
 }

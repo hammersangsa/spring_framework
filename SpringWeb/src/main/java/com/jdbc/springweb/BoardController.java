@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.jdbc.dao.BoardDAO;
+//import com.jdbc.dao.BoardDAO;
+import com.jdbc.dao.BoardDAO2;
 import com.jdbc.dto.BoardDTO;
 import com.jdbc.util.MyPage;
 
@@ -22,8 +23,8 @@ import com.jdbc.util.MyPage;
 public class BoardController {
 
 	@Autowired
-	@Qualifier("boardDAO")
-	BoardDAO dao;
+	@Qualifier("boardDAO2")
+	BoardDAO2 dao;
 	
 	@Autowired
 	MyPage myPage;
