@@ -6,6 +6,8 @@
 <aop-project name="SpringMVC1"/>
 <aop-project name="SpringMyBatis"/>
 <aop-project name="SpringWebMybatis"/>
+<aop-project name="SpringWebView"/>
+<aop-project name="Spring-Boot-Board"/>
 <aop-project name="SpringDI2"/>
 <aop-project name="SpringAOP"/>
 </aop-reference-model>
