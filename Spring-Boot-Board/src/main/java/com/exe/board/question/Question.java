@@ -1,4 +1,4 @@
-package com.exe.board;
+package com.exe.board.question;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -6,10 +6,13 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
+import com.exe.board.answer.Answer;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -32,8 +35,8 @@ public class Question {
 	private LocalDateTime createdDate;
 	
 	//참조한 후 question 삭제 시 답변도 삭제
+	//eager 전체데이터가 실행 될 때까지 접근
 	@OneToMany(mappedBy = "question",cascade = CascadeType.REMOVE)
 	private List<Answer> answerList;
 	
 }
-

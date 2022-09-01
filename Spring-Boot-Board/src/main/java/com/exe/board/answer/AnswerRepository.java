@@ -1,4 +1,4 @@
-package com.exe.board;
+package com.exe.board.answer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

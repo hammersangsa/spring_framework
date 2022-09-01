@@ -5,7 +5,51 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-08-30T14:43:00Z</updated>
+  <updated>2022-08-31T07:00:00Z</updated>
+  <entry>
+    <title>Price Reduction - Azure Spring Apps does more, costs less!</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/08/31/price-reduction-azure-spring-apps-does-more-costs-less" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-08-31:4898</id>
+    <updated>2022-08-31T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;We believe in providing the most innovative cloud offerings at incredibly competitive prices. As we operate Azure Spring Apps, we continue to build efficiencies and economies of scale. We are passing those efficiencies to you. &lt;/p&gt;
+&lt;p&gt;Many customers have asked us to lower the size of the base unit to make it easier to get started and accommodate smaller projects. &lt;/p&gt;&lt;h2&gt;&lt;a href="#announcing-price-and-base-unit-reduction" class="anchor" name="announcing-price-and-base-unit-reduction"&gt;&lt;/a&gt;Announcing Price and Base Unit Reduction&lt;/h2&gt;
+&lt;p&gt;Effective September 1st, we are reducing the base unit of Azure Spring Apps Standard and Enterprise to 6 vCPUs and 12 GB of Memory. And reducing the overage prices for vCPU and Memory. &lt;/p&gt;
+&lt;img src="https://github.com/joshlong/blog-images/raw/master/price-reduction-azure-spring-apps-does-more-costs-less/Price-Reductions-Azure-Spring-Apps-Edition-02.png"  /&gt;&lt;h2&gt;&lt;a href="#new-monthly-free-grants" class="anchor" name="new-monthly-free-grants"&gt;&lt;/a&gt;New Monthly FREE Grants&lt;/h2&gt;
+&lt;p&gt;Furthermore, to help you get started, effective mid-September, we are offering monthly FREE grants ? 50 vCPU hours and 100 Memory GB hours. &lt;/p&gt;
+&lt;p&gt;Let¡¯s look at a few examples: &lt;/p&gt;
+&lt;p&gt;Note: If you are running 10 app instances with 1 vCPU and 2GB in Azure Spring Apps Standard, the service will consume 50 vCPU hours (10 app instances x 1 vCPU x 5 hours) and 100 Memory GB hours (10 app instances x 2 GB x 5 hours) in 5 hours. After that, the base and overage prices will be charged. Please note that the base unit in Standard tier allocates 6 vCPUs and 12 GB of Memory and it runs for 8 hours and 20 minutes using the monthly free grant. &lt;/p&gt;
+&lt;table&gt;&#xD;
+&lt;thead&gt;&lt;tr&gt;&#xD;
+&lt;td&gt; App instances in Standard   &lt;/td&gt;&#xD;
+&lt;td&gt; No. of FREE hours per month BEFORE the base and or overage prices are charged &lt;/td&gt;&lt;/tr&gt;&#xD;
+&lt;/thead&gt;&#xD;
+&lt;tr&gt;&lt;td&gt;0 to 6 app instances with 1 vCPU and 2GB &lt;/td&gt;&lt;td&gt;8 hours and 20 minutes &lt;/td&gt;&lt;/tr&gt;&#xD;
+&lt;tr&gt;&lt;td&gt;10 app instances with 1 vCPU and 2GB &lt;/td&gt;&lt;td&gt;5 hours&lt;/td&gt;&lt;/tr&gt;&#xD;
+&lt;tr&gt;&#xD;
+&lt;td&gt;20 app instances with 1 vCPU and 2GB &lt;/td&gt;&#xD;
+&lt;td&gt;2 hours and 30 minutes&lt;/td&gt;&#xD;
+&lt;/tr&gt;&#xD;
+&lt;/table&gt;&lt;h1&gt;&lt;a href="#try-today" class="anchor" name="try-today"&gt;&lt;/a&gt;Try Today&lt;/h1&gt;
+&lt;p&gt;In 2019, Microsoft and VMware announced Azure Spring Apps, a fully managed service for Spring applications. Since then we&amp;rsquo;ve helped many customers adopt the service including &lt;a href="https://aka.ms/Bosch.IO"&gt;Bosch&lt;/a&gt;, &lt;a href="https://aka.ms/DLR"&gt;Digital Realty&lt;/a&gt;, &lt;a href="https://mybuild.microsoft.com/en-US/sessions/71ed338e-5f85-44d8-a225-6210fdbdd06d?source=sessions"&gt;FedEx&lt;/a&gt;, &lt;a href="https://www.youtube.com/watch?v=EfgiW6xJseM"&gt;Kroger&lt;/a&gt;, &lt;a href="https://aka.ms/Liantis"&gt;Liantis&lt;/a&gt;, &lt;a href="https://youtu.be/wdwjqXTFFZ0"&gt;Morgan Stanley&lt;/a&gt;, &lt;a href="https://aka.ms/secure-com"&gt;National Life&lt;/a&gt;, &lt;a href="https://customers.microsoft.com/en-us/story/1388620728739667057-raleys-uses-azure-spring-cloud-to-optimize-scale-and-drive-innovation"&gt;Raley&amp;rsquo;s&lt;/a&gt;, and &lt;a href="https://customers.microsoft.com/en-us/story/1358540087031302788-swiss-re-accelerates-java-app-modernization-using-azure-spring-cloud"&gt;SwissRe&lt;/a&gt;. They value the fully managed infrastructure of Azure Spring Apps that lets them focus on their apps, while the service manages dynamic scaling, security patching, out-of-the-box instrumentation for monitoring, and more.&lt;/p&gt;
+&lt;p&gt;We set out to solve many of the common challenges enterprise developers face when running Spring applications at scale. We have continued to collaborate to expand the core service to become the Azure Spring Apps of today with a broader set of features, including the recently announced &lt;a href="https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-spring-apps-enterprise-tier-is-now-generally-available/ba-p/3418245"&gt;Azure Spring Apps Enterprise&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We will continue to deliver on our commitment to provide the best value to you.&lt;/p&gt;
+&lt;p&gt;You can get started today - &lt;a href="https://docs.microsoft.com/en-us/azure/spring-apps/quickstart?tabs=Azure-CLI&amp;pivots=programming-language-java"&gt;deploy&lt;/a&gt; your first Spring app on Azure!&lt;/p&gt;&lt;h2&gt;&lt;a href="#additional-resources" class="anchor" name="additional-resources"&gt;&lt;/a&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Learn using an?&lt;a href="https://docs.microsoft.com/en-us/learn/modules/azure-spring-cloud-workshop/"&gt;MS Learn module&lt;/a&gt;?or?&lt;a href="https://github.com/microsoft/azure-spring-cloud-training"&gt;self-paced workshop&lt;/a&gt;?on GitHub&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://aka.ms/Fitness-Store"&gt;Deploy&lt;/a&gt;?Fitness Store Spring Boot apps to Azure&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://aka.ms/Deploy-Spring"&gt;Deploy&lt;/a&gt;?Animal Rescue Spring Boot apps to Azure&lt;/li&gt;
+  &lt;li&gt;Learn?&lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/"&gt;more&lt;/a&gt;?about implementing solutions on Azure Spring Apps&lt;/li&gt;
+  &lt;li&gt;Deploy Spring Boot applications by leveraging enterprise best practices &amp;ndash;?&lt;a href="https://docs.microsoft.com/en-us/azure/spring-cloud/reference-architecture"&gt;Azure Spring Apps Reference Architecture&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Migrate your?&lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-boot-to-azure-spring-cloud"&gt;Spring Boot&lt;/a&gt;,?&lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/migration/migrate-spring-cloud-to-azure-spring-cloud"&gt;Spring Cloud&lt;/a&gt;,?and?&lt;a href="https://aka.ms/migrate-tomcat-to-azure-spring-cloud-service"&gt;Tomcat&lt;/a&gt;?applications to Azure Spring Apps&lt;/li&gt;
+  &lt;li&gt;Wire Spring applications to?&lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/"&gt;interact with Azure services&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;For feedback and questions, please?&lt;a href="mailto:AzureSpringCloud-Talk@service.microsoft.com"&gt;e-mail&lt;/a&gt;?us.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Microsoft is committed to the success of Java developers</title>
     <link rel="alternate" href="https://spring.io/blog/2022/08/30/microsoft-is-committed-to-the-success-of-java-developers" />
@@ -756,21 +800,6 @@ class RequestHashingGatewayFilterFactoryTest {&#xD;
     <updated>2022-08-11T10:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, Josh Long (@starbuxman) talks to the good Dr. Venkat Subramaniam (@venkat_s) about the art of writing software, his latest projects, and more&lt;/p&gt;
 &lt;iframe title="The Good Dr. Venkat Subramaniam" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=e4rdk-1297273-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Web Flow 3.0 M1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/08/10/spring-web-flow-3-0-m1-released" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Rossen Stoyanchev</name>
-    </author>
-    <id>tag:spring.io,2022-08-10:4876</id>
-    <updated>2022-08-10T15:26:28Z</updated>
-    <content type="html">&lt;p&gt;It has been almost 4 years since the last set of Spring Web Flow releases. Nevertheless, the project continues to serve a specific need particularly well, arguably better than alternatives, and remains in active use. While there hasn&amp;rsquo;t been a strong driver for new releases, the upcoming Spring Framework 6 brings a Java 17 baseline and makes the shift to Jakarta EE, which creates the need for such a release in order to enable applications to migrate to this new baseline.&lt;/p&gt;
-&lt;p&gt;Today I&amp;rsquo;m pleased to announce the availability of Spring Web Flow 3.0 M1 in the &lt;a href="https://repo.spring.io/milestone"&gt;Spring milestone&lt;/a&gt; repository. This release focuses mainly on compatibility with Spring Framework 6 and Jakarta EE. The Travel booking-mvc sample on &lt;a href="https://github.com/spring-projects/spring-webflow-samples"&gt;spring-projects/spring-webflow-samples&lt;/a&gt; has been updated and the commit history provides example changes. One significant change is the need to remove Tiles which has not migrated to Jakarta EE. In the sample, Thymeleaf Layouts is used instead.&lt;/p&gt;
-&lt;p&gt;Note that Spring Faces is not included in the release due to its deep integration with JSF and the additional time and effort required to migrate. Please, reach out if you have experience with Web Flow and JSF and are interested to help out with the migration of Spring Faces to Spring Framework 6 and Jakarta EE.&lt;/p&gt;
-&lt;p&gt;If you have a Web Flow application and you plan to migrate to Spring Framework 6, please give this milestone a try and provide feedback through the project &lt;a href="https://jira.spring.io/browse/SWF"&gt;issue tracker&lt;/a&gt;. Special thanks to &lt;a href="https://github.com/iay"&gt;Ian Young&lt;/a&gt; and &lt;a href="https://github.com/scantor"&gt;Scott Cantor&lt;/a&gt; for their substantial contributions to this release!&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

@@ -12,5 +12,12 @@ public class MainController {
 	public String hello() {
 		return "메인 페이지";
 	}
+
+	@RequestMapping("/")
+	public String home() {
+		return "redirect:/question/list";
+	}
+	
+	
 	
 }
