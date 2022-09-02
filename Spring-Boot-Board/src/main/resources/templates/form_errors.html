@@ -1,0 +1,8 @@
+<!-- th에 제목과 내용이 questionForm의 영향을 받는다 
+	if error->all error를 err로 출력-->
+	<!-- th:field="*{var}"를 통해 에러가 아닌 값은 필드에 남게 한다 -->
+<!-- 에러 메세지 -->
+<div th:fragment="formErrorsFragment" 
+	class="alert alert-danger" role="alert" th:if="${#fields.hasAnyErrors()}">
+	<div th:each="err : ${#fields.allErrors()}" th:text="${err}"></div>
+</div>

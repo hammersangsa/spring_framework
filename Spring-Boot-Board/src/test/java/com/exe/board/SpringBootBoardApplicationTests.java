@@ -14,6 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.exe.board.question.Question;
 import com.exe.board.question.QuestionRepository;
+import com.exe.board.question.QuestionService;
 
 @SpringBootTest
 class SpringBootBoardApplicationTests {
@@ -112,6 +113,21 @@ class SpringBootBoardApplicationTests {
 		assertEquals(1, questionRepository.count());
 	}
 	*/
+	
+	@Autowired
+	private QuestionService questionService;
+	
+	@Test
+	void save200() {
+		
+		for(int i=1;i<=200;i++) {
+			String subject = String.format("테스트 데이터입니다:[%03d]", i);
+			String content = String.format("스프링 부트는 신이다:[%03d]", i);
+			
+			questionService.create(subject, content);
+		}
+	}
+	
 	
 }
 

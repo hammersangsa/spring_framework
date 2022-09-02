@@ -2,6 +2,8 @@ package com.exe.board.question;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 //데이터 처리를 위해서는 실제 데이터베이스와 연동하는
@@ -17,5 +19,9 @@ public interface QuestionRepository extends JpaRepository<Question, Integer>{
 	Question findBySubject(String subject);
 	Question findBySubjectAndContent(String subject, String content);
 	List<Question> findBySubjectLike(String subject);
+
+	//Pageagble을 입력받아서 Page<Question>타입의 Object로 return;
+	Page<Question> findAll(Pageable pageable);
+	
 	
 }

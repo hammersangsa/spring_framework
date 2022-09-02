@@ -34,4 +34,5 @@ public class Answer {
 	//답변은 Many가 되고 질문은 One이 된다
 	//Foreing Key가 생성
 	
+	
 }

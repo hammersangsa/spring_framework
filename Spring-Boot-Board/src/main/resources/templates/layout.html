@@ -6,10 +6,12 @@
 <title>SpringBootBoard</title>
 <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}"/>
 
+<script type="text/javascript" th:src="@{/bootstrap.min.js}"></script>
+
 </head>
 <body>
 
-<h2 class="container my-5">Spring Boot Board</h2>
+<nav th:replace="navbar :: navbarFragment"></nav>
 
 <th:block layout:fragment="content"></th:block>
 
