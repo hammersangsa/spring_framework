@@ -1,9 +1,0 @@
-package com.exe.springdi4;
-
-public class MyJobService implements JobService{
-
-	public void getJob() {
-		// TODO Auto-generated method stub
-		
-	}
-}
