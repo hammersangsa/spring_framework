@@ -1,9 +1,0 @@
-package com.exe.aop;
-
-public class MyAfterReturnAdvice {
-
-	public void afterReturnMethodCall() {
-		
-	}
-	
-}

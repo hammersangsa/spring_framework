@@ -1,7 +1,0 @@
-package com.exe.aop;
-//특정 조인포인트에 적용할 코드
-public class MyBeforeAdvice {
-
-	pr
-	
-}

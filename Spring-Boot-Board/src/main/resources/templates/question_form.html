@@ -5,9 +5,11 @@
 <div layout:fragment="content" class="container">
 
 <h5 class="my-3 border-bottom pb-2">질문등록</h5>
-
-<form th:action="@{/question/create}" th:object="${questionForm}" method="post">
-
+<!-- th:action="@{/question/create}" -->
+<form  th:object="${questionForm}" method="post">
+	<!-- th:action 대신 값을 받아오기 위해 사용, 자기 자신을 받아 옴
+		hidden으로 토큰 값을 보낸다 -->
+	<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
 	<!-- 에러 메세지 -->
 	<div th:replace="form_errors :: formErrorsFragment"></div>
 

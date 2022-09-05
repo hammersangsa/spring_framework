@@ -1,8 +1,0 @@
-package com.exe.aop;
-
-public class TargetA {
-
-	public void doSomething1{
-		
-	}
-}

@@ -1,9 +1,0 @@
-package com.exe.aop;
-
-import org.aspectj.lang.ProceedingJoinPoint;
-
-public class MyAroudAdvice {
-	
-	public Object aroundMethodCall(ProceedingJoinPoint)
-
-}

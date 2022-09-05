@@ -10,9 +10,11 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import com.exe.board.answer.Answer;
+import com.exe.board.user.SiteUser;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -38,5 +40,11 @@ public class Question {
 	//eager 전체데이터가 실행 될 때까지 접근
 	@OneToMany(mappedBy = "question",cascade = CascadeType.REMOVE)
 	private List<Answer> answerList;
+
+	@ManyToOne
+	private SiteUser author;
+	
+	//질문글 수정일
+	private LocalDateTime modifyDate;
 	
 }
