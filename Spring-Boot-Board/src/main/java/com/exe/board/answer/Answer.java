@@ -1,12 +1,14 @@
 package com.exe.board.answer;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 import com.exe.board.question.Question;
@@ -40,4 +42,6 @@ public class Answer {
 	//답글수정일
 	private LocalDateTime modifyDate;
 	
+	@ManyToMany
+	Set<SiteUser> voter;
 }
