@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.web.oauth.base.dto.SessionUser;
+import com.web.oauth.base.service.LoginUser;
 
 import lombok.RequiredArgsConstructor;
 
@@ -15,11 +16,11 @@ import lombok.RequiredArgsConstructor;
 public class BaseUserController {
 
 	private final HttpSession httpSession;
-	
+	//annotation을 통한 세션 유저 등록
 	@GetMapping("/")
-	public String index(Model model) {
+	public String index(Model model,@LoginUser SessionUser user) {
 		
-		SessionUser user = (SessionUser)httpSession.getAttribute("user");
+		//SessionUser user = (SessionUser)httpSession.getAttribute("user");
 		
 		if(user!=null) {
 			
