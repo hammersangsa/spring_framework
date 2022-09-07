@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 구글 제공 로그인 주소 -->
+<a href="/oauth2/authorization/google"><img th:src="@{google.png}"/></a>
+
+<br/><br/>
+
+이름: <strong th:text="${userName}"></strong><br/>
+이메일: <strong th:text="${email}"></strong><br/>
+프로필이미지: <p><img th:src="@{${userImg}}" width="200" height="200"/></p>
+
+<a href="/logout">Logout</a>
+
+</body>
+</html>
