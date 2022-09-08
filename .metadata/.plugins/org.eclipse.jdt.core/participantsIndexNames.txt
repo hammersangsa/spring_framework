@@ -11,3 +11,7 @@ C:\Users\gmltj\eclipse-workspace\hammer\spring_framework\.metadata\.plugins\org.
 \SpringMVC1\src\main\java
 C:\Users\gmltj\eclipse-workspace\hammer\spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4286265873.index
 \SpringWebView\src\main\java
+C:\Users\gmltj\eclipse-workspace\hammer\spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2787727717.index
+\SpringBootBoardJSP\src\main\java
+C:\Users\gmltj\eclipse-workspace\hammer\spring_framework\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3116251561.index
+\SpringBootBoardJSP\src\main\java
